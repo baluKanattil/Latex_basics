@@ -1,0 +1,64 @@
+\documentclass[11pt]{article}
+
+\begin{document}
+
+\section*{Tutorial 3}
+\subsection{Brackets, arrays}
+
+$$(x+1)$$
+$$[2+(x+1)]$$
+$$\{1,2,3\}$$
+$$\$12.55$$
+
+$$3\left(\frac{2}{5}\right)$$
+$$3\left\{\frac{2}{5}\right\}$$
+$$\left|\frac{x}{x+1}\right|$$
+$$\left|\frac{x}{x+1}\right.$$
+
+$$\left.f(x)\right|_{x=1}$$
+
+
+\subsection*{Explanation}
+For reserved characters, use backslash infront of them. To make parantheses big use left and right with backslash. Left and right should be there, to remove one use the one along with period.
+
+\subsection{Tables}
+Tables:
+
+\begin{tabular}{cccccc}
+$x$ & 1 & 2 & 3 & 4 & 5 \\
+$f(x)$ & 10 & 20 & 30 & 40 & 50
+\end{tabular}
+
+\begin{tabular}{|c|c|c|c|c|c|}
+\hline
+$x$ & 1 & 2 & 3 & 4 & 5 \\ \hline
+$f(x)$ & 10 & 20 & 30 & 40 & 50 \\
+\hline
+\end{tabular}
+
+\subsection*{Explanation}
+In tabular, mention the justification and repeat it for each column needed.
+Use \& to seperate each column in an entry.
+
+\subsection{Array}
+Equation arrays;
+
+
+\begin{eqnarray}
+5x^2 - 9= x +3 \\
+4x^2 = 12 \\
+x^2=3 \\
+x \approx \pm 1.732 \\
+\end{eqnarray}
+
+\begin{eqnarray*}
+5x^2 - 9 &=& x +3 \\
+4x^2 &=& 12 \\
+x^2 &=& 3 \\
+x &\approx&\pm 1.732 \\
+\end{eqnarray*}
+
+\subsection*{Explanation}
+For equation array, we are automatically in math mode.
+Normally all are justified right and number. Keeping \$ around a symbol will make the equation center aligned based on that symbol. * removes numbering.
+\end{document}
