@@ -1,0 +1,150 @@
+# Quick Reference to Latex
+
+## Basics
+
+* \documentclass[11pt]{article} 
+  \begin{document}
+  \end{document}
+* A=$x^2 + 4x+3$
+  $$A=x^2 + 4x+3$$
+
+## Math
+
+* superscripts:
+  $$2x^3$$ 
+  $$2x^{34}$$
+  $$2x^{3x+4} $$
+  $$sx^{3x^4+5}$$
+
+* subscripts:
+  $$x_{12}$$
+  $${x_1}_2$$
+
+* greekletters:
+  $$\pi$$
+  $$\alpha$$
+  $$ A= \pi r^2$$
+
+* trig functions:
+  $$y=\sin(x)$$
+
+* log functions:
+  $$\log_5(x)$$
+  $$\ln(x)$$
+
+* roots:
+  $$\sqrt[2]{4}$$
+  $$\sqrt{x^2+y^2}$$
+  
+* fraction:
+  $\displaystyle{\frac{2}{3}}$
+  $$\sqrt{\frac{x}{x+1}}$$
+
+* brackets:
+  $$3\left(\frac{2}{5}\right)$$
+  $$\left.f(x)\right|_{x=1}$$
+  
+## Tables
+
+* \begin{tabular}{cccccc}
+  $x$ & 1 & 2 & 3 & 4 & 5 \\
+  $f(x)$ & 10 & 20 & 30 & 40 & 50
+  \end{tabular}
+
+* \begin{tabular}{|c|c|c|c|c|c|}
+  \hline
+  $x$ & 1 & 2 & 3 & 4 & 5 \\ \hline
+  $f(x)$ & 10 & 20 & 30 & 40 & 50 \\
+  \hline
+  \end{tabular}
+
+## Arrays
+
+\begin{eqnarray}
+5x^2 - 9= x +3 \\
+4x^2 = 12 \\
+x^2=3 \\
+x \approx \pm 1.732 \\
+\end{eqnarray}
+
+\begin{eqnarray*}
+5x^2 - 9 &=& x +3 \\
+4x^2 &=& 12 \\
+x^2 &=& 3 \\
+x &\approx&\pm 1.732 \\
+\end{eqnarray*}
+
+## Lists
+
+\begin{enumerate}
+\item Pencil
+\item Notebook
+	\begin{enumerate}
+	\item Accessment
+		\begin{itemize}
+		\item Quizzes
+		\item Tests
+		\end{itemize}
+	\item Homework
+	\item Notes
+	\end{enumerate}
+\item Graph Paper
+\item Ruler
+\end{enumerate}
+
+\begin{enumerate}
+\item[Commutative Property] $a + b= b + a$
+\item[Associative Property] $a + (b +c)=(a+b) + c$
+\item[Distributive Property] $a(b+c)=ab+ac$
+\end{enumerate}
+
+# packages, title, table of contents, text formatting
+
+\usepackage[top=0.5in, bottom=0.5in,left=1in, right=1in]{geometry}	 
+\usepackage{fullpage}
+\usepackage{amsfonts}
+\usepackage{graphicx}
+
+
+\tableofcontents
+
+\title{Tutorial 5}
+\author{Balagopal}
+\date{\today}
+\maketitle
+
+This will produce \textit{italiczed} text.
+
+This will produce \textbf{Bold Faced} text.
+This will produce \textsc{Small Caps} font. 
+This will produce \texttt{Type Writer Font} .
+
+\begin{Large}
+This text will be large.
+\end{Large}
+
+\begin{center}
+This text will be centered.
+\end{center}
+ 
+\begin{flushleft}
+This text will be left justified.
+\end{flushleft}
+
+\begin{flushright}
+This text will be right justified.
+\end{flushright}
+
+# ams, graphics and macros
+
+\def\eq1{y=\frac{x}{3x^2+x+1}}
+
+\usepackage{amsfonts}
+$\mathbb{N}$
+
+\usepackage{graphicx}
+\begin{center}
+\includegraphics[scale=.15, angle=180]{e7a7b29f11bd0643661ba1611b5c62a4.jpg}
+\end{center}
+
+
